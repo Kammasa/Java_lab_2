@@ -10,10 +10,12 @@ public class Main {
         */
 
         int i = 1000;
-        do {
-            if (i % 4 == 0) {
-                System.out.printf("Liczba %s jest podzielna przez liczbe 4\n", i);
-            }
+        do
+        {
+            if (i % 4 == 0)
+        {
+            System.out.printf("Liczba %s jest podzielna przez liczbe 4\n", i);
+        }
             i--;
         }
         while (i >= 0);
@@ -41,15 +43,32 @@ public class Main {
         {
             System.out.println(tabDouble[i]);
             i++;
-        }
+
 
         //c)
+        String[] tabString = new String[]{"Kasia","Misia","Basia","Ela","Mela"};
+        int i = 0;
+        while (i < tabString.length)
+        {
+            System.out.println(tabString[i]);
+            i++;
+        }
+
 
         /* zad.3
         a) sprawdzić jak zachowuje się pętla while gdy w jej warunku damy true --> while(true)
         b) a jak gdy damy false --> while(false)
         */
+        {
+            while (true) //Wykonuje się w nieskończoność
+                System.out.println(1);
+        }
+        {
+            while (false) //Przy false wyświetla błąd
+               System.out.println(1);
+        }
 
 
     }
 }
+
